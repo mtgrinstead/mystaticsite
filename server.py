@@ -18,8 +18,8 @@ class CORSHTTPRequestHandler(SimpleHTTPRequestHandler):
 def run(
     server_class=HTTPServer,
     handler_class=CORSHTTPRequestHandler,
-    port=8000,
-    directory=None,
+    port=8888,
+    directory="../public",
 ):
     if directory:  # Change the current working directory if directory is specified
         os.chdir(directory)
